@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,700;1,400&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body{
+    background-color: #282D35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card{
+    background-color: #2e3540;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 540px;
+    padding: 3rem 2rem 4rem 2rem;
+    margin: 0 auto;
+    border-radius: 15px;
+    position: relative;
+}
+
+p{
+  color: aliceblue;
+  letter-spacing: 3.5px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 12px;
+}
+
+h2{
+    color:beige;
+    font-size: 24px;
+    margin-bottom: 2.5rem;
+}
+
+
+.dice{
+    background: beige;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position:absolute;
+    bottom: -2rem;
+
+}
+
+.divider{
+    border: 1px solid rgb(61, 59, 59);
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.dice:hover{
+ box-shadow: 0 0 40px 0 rgb(175, 177, 175);
+ transition: .2s ease-in;
+}
+
+@media(max-width: 620px){
+    .card{
+        width: 90%
+    }
+}
